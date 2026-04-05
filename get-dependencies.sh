@@ -7,6 +7,7 @@ ARCH=$(uname -m)
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
+	clang 	 \
     cmake    \
     libdecor \
     openal   \
@@ -31,6 +32,8 @@ mkdir -p ./AppDir/bin
 cd Prey2006/neo
 cmake . \
 	-DCMAKE_BUILD_TYPE=Release \
+	-DCMAKE_C_COMPILER=clang \
+	-DCMAKE_CXX_COMPILER=clang++ \
 	-DSDL3=ON
 make -j$(nproc)
 mv -v gamex86_64.so ../../AppDir/bin
