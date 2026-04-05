@@ -28,10 +28,10 @@ git clone "$REPO" ./Prey2006
 echo "$VERSION" > ~/version
 
 mkdir -p ./AppDir/bin
-cd Prey2006/neo && mkdir build && cd build
-cmake .. \
+cd Prey2006/neo
+cmake . \
 	-DCMAKE_BUILD_TYPE=Release \
 	-DSDL3=ON
 make -j$(nproc)
-mv -v prey06 ../../../AppDir/bin
-mv -v prey06ded ../../../AppDir/bin
+mv -v prey06 ../../AppDir/bin
+mv -v prey06ded ../../AppDir/bin
