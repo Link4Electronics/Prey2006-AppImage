@@ -39,4 +39,4 @@ cmake . \
 	-DSDL3=ON
 make -j$(nproc)
 mv -v gamex86_64.so ../../AppDir/bin
-mv -v ../output/linux/prey06 ../output/linux/prey06ded ../output/linux/base/* ../../AppDir/bin
+mv -v ../output/linux/prey06 ../output/linux/prey06ded ../output/linux/base ../../AppDir/bin
