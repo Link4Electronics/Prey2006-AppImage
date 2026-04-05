@@ -29,10 +29,9 @@ echo "$VERSION" > ~/version
 
 mkdir -p ./AppDir/bin
 cd Prey2006/neo
-sed -i '154s/(intptr_t)command.parmList/(void*)command.parmList/' Prey/game_anim.cpp
 cmake . \
 	-DCMAKE_BUILD_TYPE=Release \
-	-DSDL3=ON
+	-DSDL3=ON -DCMAKE_CXX_FLAGS="-Wno-narrowing -Wno-error=conversion"
 make -j$(nproc)
 mv -v gamex86_64.so ../../AppDir/bin
 mv -v ../output/linux/prey06 ../output/linux/prey06ded ../output/linux/base ../../AppDir/bin
