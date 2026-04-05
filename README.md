@@ -11,7 +11,7 @@
 </p>
 
 
-| Latest Stable Release | Upstream URL |
+| Latest Nightly Release | Upstream URL |
 | :---: | :---: |
 | [Click here](https://github.com/pkgforge-dev/Prey2006-AppImage/releases/latest) | [Click here](https://github.com/FriskTheFallenHuman/Prey2006) |
 
