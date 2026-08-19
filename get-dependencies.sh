@@ -16,7 +16,7 @@ echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
 get-debloated-pkgs --add-common --prefer-nano
 
-echo "Making nightly build of Rednukem..."
+echo "Building Prey2006..."
 echo "---------------------------------------------------------------"
 REPO="https://github.com/FriskTheFallenHuman/Prey2006"
 VERSION="$(git ls-remote "$REPO" HEAD | cut -c 1-9 | head -1)"
